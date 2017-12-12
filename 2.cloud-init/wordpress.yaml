@@ -17,8 +17,8 @@ runcmd:
  - service mysql restart
  - wget  https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar -O /usr/local/bin/wp
  - chmod +x /usr/local/bin/wp
- - cd /var/www/html/ && /usr/local/bin/wp --allow-root core download --path=/srv/www/html/ --version="4.8.1"
- - cd /var/www/html/ && /usr/local/bin/wp --allow-root core config --dbname=wordpress --dbuser=v9bK6weA --dbhost=10.1.254.254 --dbpass=$p
+ - cd /var/www/html/ && /usr/local/bin/wp --allow-root core download --path=/var/www/html/ --version="4.8.1"
+ - cd /var/www/html/ && /usr/local/bin/wp --allow-root core config --dbname=wordpress --dbuser=v9bK6weA --dbhost=localhost--dbpass=$p
  - cd /var/www/html/ && /usr/local/bin/wp --allow-root db create
  - chown -R www-data:www-data /var/www
  - service apache2 restart
