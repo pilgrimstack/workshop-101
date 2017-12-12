@@ -21,4 +21,5 @@ runcmd:
  - cd /var/www/html/ && /usr/local/bin/wp --allow-root core config --dbname=wordpress --dbuser=v9bK6weA --dbhost=localhost--dbpass=$p
  - cd /var/www/html/ && /usr/local/bin/wp --allow-root db create
  - chown -R www-data:www-data /var/www
+ - rm -f /var/www/html/index.html
  - service apache2 restart
