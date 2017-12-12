@@ -7,11 +7,11 @@ This is a "first steps" workshop using:
 You'll run a workshop which present you the basics of OVH Public Cloud.
 
 There will be 3 steps:
- * Horizon: This is the official OpenStack GUI (Graphical User Interface), you'll use it to start an instance and add a disk.
- * OpenStack-Client: This is the official CLI (Command Line Interface), you'll simply launch an instance.
- * Cloud-Init: This is the first step to automation, it will help you to launch a post-install script.
+ * Horizon: This is the official OpenStack GUI (Graphical User Interface), you'll use it to start an instance and add a disk
+ * OpenStack-Client: This is the official CLI (Command Line Interface), you'll simply launch two instances
+ * Cloud-Init: This is the first step to automation, it will help you to launch a post-install script
 
-Every instructions will be provided to guide you step by steps. The required knowledges are simply the basics of SSH and the Linux command line.
+Every instructions will be provided to guide you step by steps. The required knowledges are simply the basics of SSH and Linux command line.
 
 ## Schema
 
@@ -57,7 +57,6 @@ Create a file named credentials and paste the content of the downloaded file on 
 
 ```bash
 git clone https://github.com/pilgrimstack/workshop-101.git
-cd workshop-101
 ```
 
 Let's go to the [Horizon environment](./0.horizon).

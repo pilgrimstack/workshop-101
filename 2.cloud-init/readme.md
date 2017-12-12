@@ -8,8 +8,9 @@ You'll manipulate cloud-init scripts. This is a standard tool to manipulate sett
 
 # Read the cloud-init files
 
-You have 2 yaml files in the workshop-101 directory.
+You have 2 yaml files in the directory.
 ```bash
+cd 2.cloud-init
 cat etherpad.yaml
 ```
 ```bash
@@ -29,9 +30,3 @@ openstack --image 'Debian 8' --flavor 's1-2' --key-name mykey --user-data etherp
 
 Wait few minutes and get the IP of the instance (now you know how to do it) to try to join it in a web browser.
 
-# Go to the next step
-
-```bash
-cd ../2.cloud-init
-```
-Let's go to the [cloud-init environment](../2.cloud-init) for more power.

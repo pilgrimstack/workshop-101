@@ -69,7 +69,4 @@ Give the name "mykey" and past the content of the key before saving.
 
 # Go to the next step
 
-```bash
-cd ../1.cli
-```
 Let's go to the [cli environment](../1.cli) for more fun.

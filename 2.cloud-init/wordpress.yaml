@@ -1,0 +1,24 @@
+#cloud-config
+
+apt_update: true
+
+packages:
+ - mysql-server
+ - nfs-server
+ - php5
+ - php5-mysql
+ - apache2
+
+runcmd:
+ - p=$(date +%s | sha256sum | base64 | head -c 32)
+ - echo $p > /root/.p
+ - mysql -e "create database wordpress; create user 'v9bK6weA'@'%' identified by '$p'; grant all privileges on wordpress.* to 'v9bK6weA'@'%'; flush privileges;"
+ - mysqladmin -u root password "$p"
+ - service mysql restart
+ - wget  https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar -O /usr/local/bin/wp
+ - chmod +x /usr/local/bin/wp
+ - cd /var/www/html/ && /usr/local/bin/wp --allow-root core download --path=/srv/www/html/ --version="4.8.1"
+ - cd /var/www/html/ && /usr/local/bin/wp --allow-root core config --dbname=wordpress --dbuser=v9bK6weA --dbhost=10.1.254.254 --dbpass=$p
+ - cd /var/www/html/ && /usr/local/bin/wp --allow-root db create
+ - chown -R www-data:www-data /var/www
+ - service apache2 restart

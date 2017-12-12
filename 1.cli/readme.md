@@ -78,7 +78,4 @@ It's time to delete those 2 instances
 
 # Go to the next step
 
-```bash
-cd ../2.cloud-init
-```
 Let's go to the [cloud-init environment](../2.cloud-init) for more power.
