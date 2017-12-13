@@ -53,8 +53,6 @@ ssh bounce@xxx.xxx.xxx.xxx
 
 The IP and the password are provided during the workshop. You have to give a unique ID, it can be your desktop ID or your firstname.name (without accent and space). In case of connection lost, just redo the same.
 
-Create a file named credentials and paste the content of the downloaded file on the previous step.
-
 ```bash
 git clone https://github.com/pilgrimstack/workshop-101.git
 ```

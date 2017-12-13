@@ -22,10 +22,10 @@ Take time to learn how to build a cloud-init file.
 # Launch one of the following instance
 
 ```bash
-openstack --image 'Debian 8' --flavor 's1-2' --key-name mykey --user-data wordpress.yaml wordpress
+openstack server create --image 'Debian 9' --flavor 's1-2' --key-name mykey --user-data wordpress.yaml wordpress
 ```
 ```bash
-openstack --image 'Debian 8' --flavor 's1-2' --key-name mykey --user-data etherpad.yaml etherpad
+openstack server create --image 'Debian 9' --flavor 's1-2' --key-name mykey --user-data etherpad.yaml etherpad
 ```
 
 Wait few minutes and get the IP of the instance (now you know how to do it) to try to join it in a web browser.

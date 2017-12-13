@@ -60,7 +60,7 @@ Give the name "mykey" and past the content of the key before saving.
    ```
  * Verify the 5GB volume is here
    ```bash
-   sudo fdisk -l /dev/sdb
+   sudo fdisk -l /dev/vdb
    ```
  * logout with
    ```bash
