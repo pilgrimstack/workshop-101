@@ -28,6 +28,8 @@ Copy this key, we'll upload it into OpenStack.
 
 In Horizon, on the left menu bar, go to *Compute* > *Key Pairs*, then click on *Import Key Pair* on the right side.
 
+Do not forget the `ssh-rsa` at the beginning of the key !
+
 Give the name "mykey" and past the content of the key before saving.
 
 # Launch your first instance
