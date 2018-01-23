@@ -58,7 +58,7 @@ Give the name "mykey" and past the content of the key before saving.
    ```bash
    ssh debian@IPv4_Public
    ```
- * Verify the 5GB volume is here. Depending on the region your are in (you can see the region in horizon interface) the disk miht not be at the same path.
+ * Verify the 5GB volume is here. Depending on the region your are in (you can see the region in horizon interface) the disk might not be at the same path.
    ```bash
    sudo fdisk -l /dev/vdb
    OR
