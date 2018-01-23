@@ -45,7 +45,7 @@ If you need help on that part, please watch those videos:
 
 # Let's Go!
 
-A server is available with a prepared environment.
+A server is available with a prepared environment. Do not use the terminal built in the OVH mnager. Use your own terminal.
 
 ```bash
 ssh bounce@xxx.xxx.xxx.xxx
